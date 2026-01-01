@@ -67,5 +67,5 @@ I help <strong>engineering, construction, and asset management companies</strong
 ## Contact
 
 - Email: your@email.com  
-- LinkedIn: [linkedin.com/in/muataz-albadri](https://www.linkedin.com/in/muataz-albadri/)  
+- LinkedIn: [linkedin.com/in/muataz-albadri]( https://www.linkedin.com/in/muataz-albadri-2290381a4/) 
 - GitHub: [github.com/yourusername](https://github.com/yourusername)
