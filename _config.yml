@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: Muataz Albadri
 email: muatazs.abed@gmail.com
-description:We deliver Scan-to-BIM services, helping engineering and construction stakeholders transform unstructured reality data into information-rich digital models.   
+description: We deliver Scan-to-BIM services, helping engineering and construction stakeholders transform unstructured reality data into information-rich digital models.   
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
@@ -56,12 +56,12 @@ plugins:
 
 author:
   name   : "Muataz Albadri"
-  avatar : "/assets/images/authors/muataz.jpg"
+  avatar : "/assets/images/muataz.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/Muataz Albadri/"
+      url: "https://www.linkedin.com/in/Muataz Albadri"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
