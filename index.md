@@ -37,7 +37,7 @@ automated digital workflows.
 
 ---
 
-## Contact
+## Contact 
 
 Email: your@email.com  
 LinkedIn: https://linkedin.com/in/yourprofile
