@@ -3,45 +3,71 @@ layout: home
 title: ""
 show_posts: false
 ---
-![Muataz Albadri](assets/images/Muataz.jpg){: style="width:150px; border-radius:50%;" }
-## Scan-to-BIM & AI Automation for AEC Projects
 
-I help engineering, construction, and asset management companies
-convert reality data into accurate BIM models and
-automated digital workflows.
+<!-- Header: Photo + Name + Title -->
+<div style="display:flex; align-items:center; margin-bottom:30px;">
+  <img src="assets/images/profile.jpg" alt="Muataz Albadri" style="width:120px; height:120px; border-radius:50%; margin-right:20px;">
+  <div>
+    <h1 style="margin:0;">Muataz Albadri</h1>
+    <h3 style="margin:0; font-weight:normal;">Scan-to-BIM & AI Automation Specialist</h3>
+  </div>
+</div>
 
-### What I Do
-- Scan-to-BIM (Revit / IFC)
-- Point cloud processing & segmentation
-- BIM automation (Python / Dynamo)
-- AI-based asset condition assessment
+---
+
+## Welcome
+
+I help engineering, construction, and asset management companies transform reality data into accurate BIM models and automated digital workflows.  
+I specialize in delivering fast, reliable, and intelligent digital solutions for the built environment.
+
+---
+
+## What I Do
+
+- Scan-to-BIM: Point clouds → Revit / IFC  
+- AI & Automation: Object segmentation, condition assessment  
+- BIM Automation: Python, Dynamo, Revit pipelines  
+- Digital Twin & Visualization: Interactive BIM models & dashboards
 
 ---
 
 ## Demo Reel
 
-*(Short visual examples of my work – Scan-to-BIM, AI segmentation, BIM automation)*
+<video autoplay muted loop playsinline style="width:100%; max-width:900px; border-radius:8px; margin-bottom:20px;">
+  <source src="assets/demo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-> Video coming soon
+> *Showcasing Scan-to-BIM, AI segmentation, and BIM automation workflows.*
 
 ---
 
-## Selected Work
+## Selected Projects
 
-- Automated Scan-to-BIM for indoor environments  
-- AI-based object detection from point clouds  
-- BIM automation pipelines for faster delivery  
+- Automated Scan-to-BIM for Indoor Environments  
+  - Converted point clouds to intelligent Revit models  
+  - Reduced modeling time by 60%  
+
+- AI-based Object Detection from Point Clouds  
+  - Detected walls, windows, doors, and furniture  
+  - Integrated results into BIM workflow  
+
+- BIM Automation Pipelines  
+  - Scripts for automated modeling and clash detection  
+  - Streamlined delivery for multi-building projects  
 
 ---
 
 ## Download Portfolio
 
-[Download PDF Portfolio](portfolio.pdf)
+[Download PDF Portfolio](assets/portfolio.pdf){: style="font-weight:bold;"}
 
 ---
 
-## Contact 
+## Contact
 
-Email: your@email.com  
-LinkedIn: https://linkedin.com/in/yourprofile
-
+- Email: your@email.com  
+- LinkedIn: [linkedin.com/in/Muataz Albadri](https://linkedin.com/in/Muataz Albadri)  
+- GitHub: [github.com/yourusername](https://github.com/yourusername)
+
+---
