@@ -1,3 +1,6 @@
+layout: home
+title: Muataz Albadri
+
 ## Scan-to-BIM & AI Automation for AEC Projects
 
 I help engineering, construction, and asset management companies
