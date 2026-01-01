@@ -171,7 +171,7 @@ video {
     <h2>Contact</h2>
     <ul>
       <li>Email: your@email.com</li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/muataz-albadri/" target="_blank">linkedin.com/in/muataz-albadri-2290381a4</a></li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/muataz-albadri/-2290381a4/" target="_blank">linkedin.com/in/muataz-albadri</a></li>
       <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
     </ul>
   </section>
