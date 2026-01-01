@@ -56,7 +56,7 @@ plugins:
 
 author:
   name   : "Muataz Albadri"
-  avatar : "/assets/images/muataz.jpg"
+  avatar : "/assets/images/Muataz.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "LinkedIn"
