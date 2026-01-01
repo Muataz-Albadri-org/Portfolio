@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "Muataz Albadri"
+title: ""
 ---
 ## Scan-to-BIM & AI Automation for AEC Projects
 
