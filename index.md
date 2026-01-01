@@ -106,15 +106,15 @@ video {
     <div>
       <h1>Muataz Albadri</h1>
       <h3>Scan-to-BIM & AI Automation Specialist</h3>
-      <p>Transforming reality data into actionable digital models</p>
+      
     </div>
   </div>
 
   <!-- Welcome Section -->
   <section>
     <h2>Welcome</h2>
-    <p style="color:#555555;">
-      I help <strong>engineering, construction, and asset management companies</strong> turn reality data into <strong>accurate BIM models</strong> and <strong>automated digital workflows</strong>. My expertise delivers <strong>fast, reliable, and intelligent solutions</strong> for the built environment.
+    <p style="color:#555555;">          
+        We help <strong>engineering, construction, and asset management stakeholders</strong> transform unstructured reality data into <strong>information-rich digital models</strong> and <strong>automated digital workflows</strong>.
     </p>
   </section>
 
