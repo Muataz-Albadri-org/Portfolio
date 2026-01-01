@@ -6,7 +6,7 @@ show_posts: false
 
 <!-- Header: Photo + Name + Title -->
 <div style="display:flex; align-items:center; margin-bottom:30px;">
-  <img src="assets/images/profile.jpg" alt="Muataz Albadri" style="width:120px; height:120px; border-radius:50%; margin-right:20px;">
+  <img src="assets/images/Muataz.jpg" alt="Muataz Albadri" style="width:120px; height:120px; border-radius:50%; margin-right:20px;">
   <div>
     <h1 style="margin:0;">Muataz Albadri</h1>
     <h3 style="margin:0; font-weight:normal;">Scan-to-BIM & AI Automation Specialist</h3>
