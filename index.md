@@ -1,7 +1,9 @@
 ---
 layout: home
 title: ""
+show_posts: false
 ---
+![Muataz Albadri](assets/images/Muataz.jpg){: style="width:150px; border-radius:50%;" }
 ## Scan-to-BIM & AI Automation for AEC Projects
 
 I help engineering, construction, and asset management companies
