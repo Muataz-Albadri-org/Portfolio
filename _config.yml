@@ -56,7 +56,7 @@ plugins:
 
 author:
   name   : "Muataz Albadri"
-  avatar : "C:\Users\muata\OneDrive - Universidade de Vigo\0_Paperwork\my documments\Muataz.jpg"
+  avatar : "/assets/images/authors/muataz.jpg"
   bio    : "My awesome biography constrained to a sentence or two goes here."
   links:
     - label: "LinkedIn"
