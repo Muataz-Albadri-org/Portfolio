@@ -13,12 +13,14 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Home
+title: Muataz Albadri
 email: muatazs.abed@gmail.com
-description: We deliver Scan-to-BIM services, helping engineering and construction stakeholders transform unstructured reality data into information-rich digital models.   
+description: Scan-to-BIM & AI Automation Consultant helping engineering,
+  construction, and asset owners transform reality data into
+  reliable digital models and automated BIM workflows.
 twitter_username: username
 github_username: username
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
