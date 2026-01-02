@@ -24,17 +24,11 @@ body {
 }
 
   .container {
-  width: 100%;
-  max-width: 1240px;
+  max-width: 1240px;  
   margin: 0 auto;
   padding: 70px 32px;
 }
 
-@media (min-width: 1600px) {
-  .container {
-    max-width: 1380px;
-  }
-}
 
 
 /* HERO */
@@ -53,7 +47,10 @@ body {
   border: 3px solid var(--border); 
   box-shadow: 0 0 30px rgba(76,120,168,0.25); 
 }
-
+.hero p {
+  text-align: justify;
+  text-justify: inter-word;
+}
 
 .hero h1 {
   font-size: 3rem;
