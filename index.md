@@ -143,14 +143,12 @@ footer {
   <div class="hero">
     <img src="assets/images/Muataz.jpg" alt="Muataz Albadri">
     <div>
-      <h1>Muataz Albadri</h1>
+      <h1>Muataz Albadri<h1>
       <h2>Scan-to-BIM & AI Automation Consultant</h2>
       <p>
         I help engineering firms, contractors, and asset owners convert
         reality data into reliable digital twins and automated BIM workflows
         that reduce delivery time, minimize errors, and improve decision-making.
-      </p>
-      <a href="#contact" class="button">Schedule a Consultation</a>
     </div>
   </div>
 
