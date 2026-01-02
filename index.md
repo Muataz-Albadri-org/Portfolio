@@ -153,35 +153,45 @@ footer {
 }
 
   /* GLOBAL NAVIGATION OVERRIDE */
+/* ===== FORCE HEADER / NAVIGATION DARK THEME ===== */
+
+/* Header container (generic catch-all) */
+  
 header,
 .site-header,
-.nav,
-.navbar {
+.page-header {
   background-color: #0B0D12 !important;
   border-bottom: 1px solid #2A2E38;
 }
 
 /* Navigation links */
 header a,
-.site-header a,
-.nav a {
+.site-header a {
   color: #E6E8EB !important;
   font-weight: 500;
   text-decoration: none;
+  margin-right: 24px;
 }
 
-/* Hover / active state */
+/* Site title (Home) */
+.site-title {
+  color: #FFFFFF !important;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+/* Hover state */
 header a:hover,
-.site-header a:hover,
-.nav a:hover {
+.site-header a:hover {
   color: #4C78A8 !important;
 }
 
-/* Active page indicator */
-header a.active,
-.site-header a.active {
+/* Active page (optional but professional) */
+header a[aria-current="page"],
+header a.active {
   color: #4C78A8 !important;
   border-bottom: 2px solid #4C78A8;
+  padding-bottom: 4px;
 }
 
 </style>
