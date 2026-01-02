@@ -37,30 +37,13 @@ body {
   align-items: center;
   margin-bottom: 80px;
 }
-.hero img {
-  width: 180px;
-  height: 180px;
 
-  object-fit: cover;           /* prevents distortion */
-  border-radius: 50%;          /* true circle = professional */
-
-  border: 2px solid var(--border);
-
-  /* layered shadow = depth without flash */
-  box-shadow:
-    0 0 0 4px rgba(76,120,168,0.15),
-    0 12px 30px rgba(0,0,0,0.65);
-}
-.hero img {
-  position: relative;
-}
-
-.hero img::after {
-  content: "";
-  position: absolute;
-  inset: -6px;
-  border-radius: 50%;
-  border: 1px solid rgba(76,120,168,0.35);
+.hero img { 
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  border: 3px solid var(--border); 
+  box-shadow: 0 0 30px rgba(76,120,168,0.25); 
 }
 
 
