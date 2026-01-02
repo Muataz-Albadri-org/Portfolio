@@ -40,18 +40,35 @@ body {
   margin-bottom: 80px;
 }
 
-.hero img { 
-  width: 240px; 
-  height: 240px; 
-  border-radius: 50%; 
-  border: 3px solid var(--border); 
-  box-shadow: 0 0 30px rgba(76,120,168,0.25); 
+.hero img,
+.author__avatar img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid $border-color;
+  box-shadow: 0 0 40px rgba(76,120,168,0.28);
+  object-fit: cover;
+}
+
+  @media (max-width: 768px) {
+  .hero img,
+  .author__avatar img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero img,
+  .author__avatar img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .hero p {
   text-align: justify;
   text-justify: inter-word;
 }
-
 .hero h1 {
   font-size: 3rem;
   margin: 0;
