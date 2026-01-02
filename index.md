@@ -120,12 +120,12 @@ video {
 
   <!-- What I Do -->
   <section>
-    <h2>What I Do</h2>
+    <h2>What e Do</h2>
     <ul class="services">
-      <li>🔹 <span>Scan-to-BIM</span>: Point clouds → Revit / IFC</li>
-      <li>🔹 <span>AI & Automation</span>: Object segmentation, condition assessment</li>
-      <li>🔹 <span>BIM Automation</span>: Python, Dynamo, Revit pipelines</li>
-      <li>🔹 <span>Digital Twin & Visualization</span>: Interactive BIM models & dashboards</li>
+      <li> <span>Scan-to-BIM</span>: Point clouds → Revit / IFC</li>
+      <li> <span>AI & Automation</span>: Object segmentation, condition assessment</li>
+      <li> <span>BIM Automation</span>: Python, Dynamo, Revit pipelines</li>
+      <li> <span>Digital Twin & Visualization</span>: Interactive BIM models & dashboards</li>
     </ul>
   </section>
 
