@@ -41,8 +41,8 @@ body {
 }
 
 .hero img { 
-  width: 150px; 
-  height: 150px; 
+  width: 240px; 
+  height: 240px; 
   border-radius: 50%; 
   border: 3px solid var(--border); 
   box-shadow: 0 0 30px rgba(76,120,168,0.25); 
