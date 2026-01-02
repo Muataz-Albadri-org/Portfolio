@@ -120,7 +120,7 @@ video {
 
   <!-- What I Do -->
   <section>
-    <h2>What e Do</h2>
+    <h2>What We Do</h2>
     <ul class="services">
       <li> <span>Scan-to-BIM</span>: Point clouds → Revit / IFC</li>
       <li> <span>AI & Automation</span>: Object segmentation, condition assessment</li>
