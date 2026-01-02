@@ -178,3 +178,19 @@ video {
   </section>
 
 </div>
+<footer>
+  <ul>
+    <li>
+      <a href="{{ site.baseurl }}/feed.xml" target="_blank">
+        <i class="fas fa-rss"></i> Subscribe
+      </a>
+    </li>
+    {% for link in site.author.links %}
+      <li>
+        <a href="{{ link.url }}" target="_blank">
+          <i class="{{ link.icon }}"></i> {{ link.label }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</footer>
