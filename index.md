@@ -135,6 +135,17 @@ footer {
   color: var(--text-muted);
   font-size: 0.9rem;
 }
+
+.hero h1 {
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    white-space: normal;
+  }
+}
+
 </style>
 
 <div class="container">
@@ -152,6 +163,7 @@ footer {
       </p>
     </div>
   </div>
+  
 
   <!-- SERVICES -->
   <section>
