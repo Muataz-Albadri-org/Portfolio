@@ -39,9 +39,9 @@ body {
 }
 
 .hero img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
+  width: 190px;
+  height: 190px;
+  border-radius: 75%;
   border: 3px solid var(--border);
   box-shadow: 0 0 30px rgba(76,120,168,0.25);
 }
