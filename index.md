@@ -152,6 +152,38 @@ footer {
   }
 }
 
+  /* GLOBAL NAVIGATION OVERRIDE */
+header,
+.site-header,
+.nav,
+.navbar {
+  background-color: #0B0D12 !important;
+  border-bottom: 1px solid #2A2E38;
+}
+
+/* Navigation links */
+header a,
+.site-header a,
+.nav a {
+  color: #E6E8EB !important;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Hover / active state */
+header a:hover,
+.site-header a:hover,
+.nav a:hover {
+  color: #4C78A8 !important;
+}
+
+/* Active page indicator */
+header a.active,
+.site-header a.active {
+  color: #4C78A8 !important;
+  border-bottom: 2px solid #4C78A8;
+}
+
 </style>
 
 <div class="container">
