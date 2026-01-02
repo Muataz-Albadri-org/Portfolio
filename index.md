@@ -23,11 +23,19 @@ body {
   margin: 0;
 }
 
-.container {
-  max-width: 1080px;
+  .container {
+  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 60px 24px;
+  padding: 70px 32px;
 }
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1380px;
+  }
+}
+
 
 /* HERO */
 .hero {
