@@ -3,17 +3,18 @@ layout: home
 title: ""
 show_posts: false
 ---
-
 <style>
+/* Global */
 body {
-    background-color: #F5F6FA; /* light gray background */
-    color: #222222;
+    background-color: #0F1115; /* deep dark background */
+    color: #E6E8EB;            /* light gray text */
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
+/* Layout */
 .container {
     max-width: 1000px;
     margin: 0 auto;
@@ -22,11 +23,12 @@ body {
 
 /* Card-style sections */
 section {
-    background-color: #FFFFFF;
+    background-color: #1A1D24; /* dark card */
     padding: 30px;
     margin: 20px 0;
     border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+    border: 1px solid #2A2E38;
 }
 
 /* Header */
@@ -42,50 +44,52 @@ section {
     border-radius: 50%;
     margin-right: 20px;
     object-fit: cover;
+    border: 2px solid #2A2E38;
 }
 
 .header h1 {
     margin: 0;
-    color: #222222;
+    color: #FFFFFF;
     font-size: 2rem;
 }
 
 .header h3 {
     margin: 5px 0 0;
     font-weight: normal;
-    color: #2C3E50; /* professional dark blue */
+    color: #4C78A8; /* professional accent */
 }
 
 .header p {
     margin: 5px 0 0;
-    color: #555555;
+    color: #A0A4AB;
     font-size: 0.95rem;
 }
 
 /* Service list */
 .services span {
-    color: #2C3E50;
+    color: #4C78A8;
     font-weight: bold;
 }
 
 /* Buttons */
 .button {
-    background-color: #2C3E50; /* professional dark blue */
+    background-color: #4C78A8;
     color: #FFFFFF;
     padding: 12px 25px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 .button:hover {
-    background-color: #34495E; /* hover effect */
+    background-color: #5A8BC0;
+    transform: translateY(-1px);
 }
 
 /* Project highlights */
 .project-title {
-    color: #FF6B6B; /* subtle accent for highlights */
+    color: #8FB3D9; /* muted highlight */
     font-weight: bold;
 }
 
@@ -95,8 +99,10 @@ video {
     max-width: 900px;
     border-radius: 8px;
     margin-bottom: 20px;
+    border: 1px solid #2A2E38;
 }
 </style>
+
 
 <div class="container">
 
