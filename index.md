@@ -149,8 +149,10 @@ footer {
         I help engineering firms, contractors, and asset owners convert
         reality data into reliable digital twins and automated BIM workflows
         that reduce delivery time, minimize errors, and improve decision-making.
-        </p>
+      </p>
+      <a href="#contact" class="button">Schedule a Consultation</a>
     </div>
+  </div>
 
   <!-- SERVICES -->
   <section>
@@ -230,5 +232,4 @@ footer {
 <footer>
   © {{ site.time | date: "%Y" }} Muataz Albadri · Scan-to-BIM & AI Consulting
 </footer>
-
 
