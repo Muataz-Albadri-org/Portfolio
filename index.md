@@ -150,7 +150,7 @@ footer {
         reality data into reliable digital twins and automated BIM workflows
         that reduce delivery time, minimize errors, and improve decision-making.
         </p>
-  </div>
+    </div>
 
   <!-- SERVICES -->
   <section>
