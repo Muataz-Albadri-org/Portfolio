@@ -1,6 +1,6 @@
 ---
 title: "Projects"
-permalink: /projects/
+permalink: /Projects/
 layout: single
 published: true
 ---
