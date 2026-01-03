@@ -243,6 +243,36 @@ footer {
   font-size: 0.9rem;
   color: var(--text-muted);
 }
+
+/* ======================================================
+   HERO – MOBILE IMAGE ABOVE NAME
+ ====================================================== */
+
+@media (max-width: 600px) {
+  .hero {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero img {
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    margin-top: 0;
+  }
+
+  .hero h2 {
+    margin-top: 6px;
+  }
+
+  .hero p {
+    margin-top: 14px;
+    text-align: left; /* better readability on mobile */
+  }
+}
+
 </style>
 
 <div class="container">
