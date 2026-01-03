@@ -7,7 +7,9 @@ show_posts: false
 <div class="container">
 
 <div class="hero">
-  <img src="assets/images/Muataz.jpg" alt="Muataz Albadri">
+  <div class="hero-image">
+    <img src="assets/images/Muataz.jpg" alt="Muataz Albadri">
+  </div>
   <div>
     <h1>Muataz Albadri</h1>
     <h2>R&D Engineer & Scan-to-BIM Specialist</h2>
@@ -18,6 +20,7 @@ show_posts: false
     </p>
   </div>
 </div>
+
 
 <section>
   <h2>Consulting Services</h2>
