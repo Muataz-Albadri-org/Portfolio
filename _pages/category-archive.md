@@ -1,6 +1,0 @@
----
-title: "Projects"
-layout: Projects
-permalink: /Projects/
-author_profile: false
----
