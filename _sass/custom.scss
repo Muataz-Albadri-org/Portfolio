@@ -17,10 +17,6 @@ $accent-soft: #8FB3D9;
 
 $border: #2A2E38;
 
-$nav-bg: #0B0D12;
-$nav-text: #E6E8EB;
-$nav-muted: #B5BAC3;
-
 /* -------------------------------
    Base
 -------------------------------- */
@@ -47,68 +43,12 @@ a {
   margin: 0 auto;
   padding: 72px 32px;
 
-  @media (max-width: 768px) {
-    padding: 56px 24px;
-  }
-
-  @media (max-width: 480px) {
-    padding: 44px 20px;
-  }
+  @media (max-width: 768px) { padding: 56px 24px; }
+  @media (max-width: 480px) { padding: 44px 20px; }
 }
 
 /* -------------------------------
-   Header / Navigation
--------------------------------- */
-.masthead {
-  background-color: $nav-bg;
-  border-bottom: 1px solid $border;
-
-  .masthead__inner-wrap {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 0.9rem 1.25rem;
-  }
-
-  .site-title {
-    font-size: 1.15rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #ffffff;
-
-    &:hover {
-      color: $accent;
-    }
-  }
-
-  .greedy-nav {
-    background: transparent;
-
-    a {
-      color: $nav-muted;
-      font-size: 0.9rem;
-      font-weight: 500;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-left: 1.6rem;
-      border-bottom: 2px solid transparent;
-      transition: color 0.2s ease, border-color 0.2s ease;
-
-      &:hover {
-        color: #ffffff;
-        border-bottom-color: rgba(76,120,168,0.5);
-      }
-    }
-
-    .active a {
-      color: #ffffff;
-      border-bottom-color: $accent;
-    }
-  }
-}
-
-/* -------------------------------
-   Hero
+   Hero Section
 -------------------------------- */
 .hero {
   display: grid;
@@ -119,45 +59,44 @@ a {
   .hero-image {
     width: 240px;
     height: 240px;
-    border-radius: 50%;       // circle
-    overflow: hidden;          // crop image
+    border-radius: 50%;          // circle
+    overflow: hidden;             // crop image
     border: 3px solid $border;
     box-shadow: 0 0 40px rgba(76,120,168,0.28);
-    display: block;
 
-    img {
-      width: 100% !important;   // fill the container
-      height: 100% !important;
+    > img {
+      width: 100% !important;     // fill wrapper
+      height: 100% !important;    // fill wrapper
       object-fit: cover !important;
       display: block !important;
     }
   }
 
-  h1 {
-    margin: 0;
-    font-size: 3rem;
-  }
-
-  h2 {
-    margin: 10px 0 20px;
-    font-weight: 400;
-    color: $accent;
-  }
-
-  p {
-    max-width: 700px;
-    color: $text-muted;
-  }
-
-  @media (max-width: 900px) {
-    .hero-image {
-      width: 200px;
-      height: 200px;
-    }
-
+  .hero-text {
     h1 {
-      font-size: 2.4rem;
+      margin: 0;
+      font-size: 3rem;
+      white-space: nowrap;
     }
+
+    h2 {
+      margin: 10px 0 20px;
+      font-weight: 400;
+      font-size: 1.35rem;
+      color: $accent;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 1.05rem;
+      color: $text-muted;
+    }
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .hero-image { width: 200px; height: 200px; }
+    .hero-text h1 { font-size: 2.4rem; }
   }
 
   @media (max-width: 600px) {
@@ -170,15 +109,11 @@ a {
       margin: 0 auto 16px;
     }
 
-    h1 {
-      font-size: 2rem;
-    }
-
-    p {
-      text-align: left;
-    }
+    .hero-text h1 { font-size: 2rem; white-space: normal; }
+    .hero-text p { text-align: left; }
   }
 }
+
 /* -------------------------------
    Sections
 -------------------------------- */
@@ -194,9 +129,7 @@ section {
     font-size: 1.8rem;
   }
 
-  @media (max-width: 600px) {
-    padding: 28px 22px;
-  }
+  @media (max-width: 600px) { padding: 28px 22px; }
 }
 
 /* -------------------------------
@@ -251,9 +184,7 @@ video {
   border: 1px solid $border;
   object-fit: cover;
 
-  @media (max-width: 600px) {
-    max-height: 300px;
-  }
+  @media (max-width: 600px) { max-height: 300px; }
 }
 
 /* -------------------------------
@@ -266,11 +197,3 @@ footer {
   color: $text-muted;
 }
 
-/* -------------------------------
-   Utilities
--------------------------------- */
-.text-center { text-align: center !important; }
-.mt-2 { margin-top: 0.5rem !important; }
-.mb-2 { margin-bottom: 0.5rem !important; }
-.p-2 { padding: 0.5rem !important; }
-.rounded { border-radius: 0.5rem !important; }
