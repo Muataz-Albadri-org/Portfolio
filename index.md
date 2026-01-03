@@ -3,6 +3,7 @@ layout: home
 title: ""
 show_posts: false
 ---
+<div class="container">
 <div style="
       display:flex;
       align-items:flex-start;
