@@ -61,6 +61,66 @@ show_posts: false
     </div>
   </section>
 
+<!-- =========================
+     TECHNOLOGY STACK
+========================== -->
+<section style="margin-bottom:60px;">
+  <h2>Technology Stack</h2>
+
+  <div class="logo-scroll-wrapper">
+    <div class="logo-scroll-track">
+
+      <!-- Logos -->
+      <div class="logo-item">
+        <img src="/assets/logos/laser-scanner.svg" alt="Laser Scanners">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/python.svg" alt="Python">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/ai.svg" alt="AI">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/recap.svg" alt="Autodesk ReCap">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/revit.svg" alt="Autodesk Revit">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/autocad.svg" alt="AutoCAD">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/blenderbim.svg" alt="BlenderBIM">
+      </div>
+
+      <div class="logo-item">
+        <img src="/assets/logos/ifc.svg" alt="IFC">
+      </div>
+
+      <!-- Duplicate for seamless loop -->
+      <div class="logo-item">
+        <img src="/assets/logos/laser-scanner.svg" alt="">
+      </div>
+      <div class="logo-item">
+        <img src="/assets/logos/python.svg" alt="">
+      </div>
+      <div class="logo-item">
+        <img src="/assets/logos/ai.svg" alt="">
+      </div>
+      <div class="logo-item">
+        <img src="/assets/logos/recap.svg" alt="">
+      </div>
+
+    </div>
+  </div>
+</section>
+
   <!-- =========================
        SERVICES
   ========================== -->
