@@ -251,11 +251,11 @@ footer {
     text-align: center;
   }
 
-.hero img,
-.page__content .hero img {
-  width: 240px;       // Make sure width and height are equal
-  height: 240px;
-  border-radius: 50%; // Perfect circle
+.hero img {
+  width: 240px !important;     // force exact size
+  height: 240px !important;    // force exact size
+  max-width: none !important;  // prevent parent from shrinking
+  border-radius: 50% !important;
   border: 3px solid $border;
   box-shadow: 0 0 40px rgba(76,120,168,0.28);
   object-fit: cover;
@@ -265,21 +265,20 @@ footer {
 
 // Responsive overrides
 @media (max-width: 900px) {
-  .hero img,
-  .page__content .hero img {
-    width: 200px;
-    height: 200px;
+  .hero img {
+    width: 200px !important;
+    height: 200px !important;
   }
 }
 
 @media (max-width: 600px) {
-  .hero img,
-  .page__content .hero img {
-    width: 160px;
-    height: 160px;
+  .hero img {
+    width: 160px !important;
+    height: 160px !important;
     margin-bottom: 16px;
   }
 }
+
 
 
 
