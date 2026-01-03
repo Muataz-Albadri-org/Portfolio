@@ -14,20 +14,11 @@ show_posts: false
   ">
   
   <!-- Avatar image -->
-  <img src="/assets/images/Muataz.jpg"
-       alt="Muataz Albadri"
-       style="
-         width:140px;
-         height:140px;
-         border-radius:50%;
-         object-fit:cover;
-         border: 3px solid #2C3E50;
-         box-shadow: 0 0 20px rgba(0,0,0,0.15);
-         transition: transform 0.3s, box-shadow 0.3s;
-       "
-       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 30px rgba(0,0,0,0.25)';"
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 0 20px rgba(0,0,0,0.15)';"
-  >
+  <img src="{{ '/assets/images/Muataz.jpg' | relative_url }}" 
+     alt="Muataz Albadri"
+     style="width:140px; height:140px; border-radius:50%; object-fit:cover; border: 3px solid #2C3E50;"
+>
+
 
   <!-- Text container -->
   <div style="flex:1; min-width:200px;">
