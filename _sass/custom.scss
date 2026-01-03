@@ -48,25 +48,26 @@ a {
 }
 
 /* -------------------------------
-   Hero Section
--------------------------------- */
+   Home hero image wrapper
+--------------------------------- */
 .hero {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 36px;
   align-items: center;
 
-  .hero-image {
+  .hero-image-wrapper {
     width: 240px;
     height: 240px;
-    border-radius: 50%;          // circle
-    overflow: hidden;             // crop image
+    border-radius: 50%;
+    overflow: hidden;
     border: 3px solid $border;
     box-shadow: 0 0 40px rgba(76,120,168,0.28);
+    margin: 0 auto;
 
-    > img {
-      width: 100% !important;     // fill wrapper
-      height: 100% !important;    // fill wrapper
+    .hero-image {
+      width: 100% !important;
+      height: 100% !important;
       object-fit: cover !important;
       display: block !important;
     }
@@ -81,8 +82,8 @@ a {
 
     h2 {
       margin: 10px 0 20px;
-      font-weight: 400;
       font-size: 1.35rem;
+      font-weight: 400;
       color: $accent;
     }
 
@@ -93,22 +94,25 @@ a {
     }
   }
 
+  /* Override Minimal Mistakes home page img rules */
+  .page__content .hero-image-wrapper .hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
   /* Responsive */
   @media (max-width: 900px) {
-    .hero-image { width: 200px; height: 200px; }
+    grid-template-columns: auto 1fr;
+    .hero-image-wrapper { width: 200px; height: 200px; }
     .hero-text h1 { font-size: 2.4rem; }
   }
 
   @media (max-width: 600px) {
     grid-template-columns: 1fr;
     text-align: center;
-
-    .hero-image {
-      width: 160px;
-      height: 160px;
-      margin: 0 auto 16px;
-    }
-
+    .hero-image-wrapper { width: 160px; height: 160px; margin: 0 auto 16px; }
     .hero-text h1 { font-size: 2rem; white-space: normal; }
     .hero-text p { text-align: left; }
   }
