@@ -7,8 +7,9 @@ show_posts: false
 <div class="hero-header">
   <!-- Avatar image -->
   <img src="{{ '/assets/images/Muataz.jpg' | relative_url }}" 
-       alt="Muataz Albadri"
-       class="hero-avatar">
+     alt="Muataz Albadri"
+     style="width:140px; height:140px; border-radius:50%; object-fit:cover; border: 3px solid #2C3E50;"
+>
 
   <!-- Text -->
   <div class="hero-text">
