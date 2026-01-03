@@ -4,86 +4,98 @@ title: ""
 show_posts: false
 ---
 <div class="container">
-<div style="
-      display:flex;
-      align-items:flex-start;
-      margin-bottom:30px;
-      flex-wrap:wrap;
-      gap:20px;
-  ">
-<div class="hero-header">
-  <!-- Avatar image -->
-  <img src="{{ '/assets/images/Muataz.jpg' | relative_url }}" 
-     alt="Muataz Albadri"
-     style="width:140px; height:140px; border-radius:50%; object-fit:cover; border: 3px solid #2C3E50;"
->
 
-  <!-- Text -->
-   <div class="hero-text">
-  <div class="hero-name">
-    <h1 style="margin:0;">Muataz Albadri</h1>
-    <h3 style="margin:2px 0 10px; font-weight:400;">R&D Engineer & Scan-to-BIM Specialist</h3>
-  </div>
-  <p style="margin-top:0;">
-    I help engineering firms, contractors, and asset owners convert reality data into reliable digital twins and automated BIM workflows that reduce delivery time, minimize errors, and improve decision-making.
-  </p>
- </div>
+  <!-- HERO HEADER -->
+  <section class="hero-vertical">
 
-</div>
+    <!-- Avatar -->
+    <img
+      src="{{ '/assets/images/Muataz.jpg' | relative_url }}"
+      alt="Muataz Albadri"
+      class="hero-avatar"
+    >
 
+    <!-- Name & Role -->
+    <h1 class="hero-name">Muataz Albadri</h1>
+    <h2 class="hero-role">R&D Engineer & Scan-to-BIM Specialist</h2>
 
+    <!-- Summary -->
+    <p class="hero-summary">
+      I help engineering firms, contractors, and asset owners convert reality data
+      into reliable digital twins and automated BIM workflows that reduce delivery
+      time, minimize errors, and improve decision-making.
+    </p>
 
+  </section>
 <section>
   <h2>Consulting Services</h2>
+
   <div class="services">
     <div class="service">
       <span>Scan-to-BIM</span>
       Point clouds to Revit / IFC models with structured semantics and QA-ready outputs.
     </div>
+
     <div class="service">
       <span>AI for Reality Data</span>
-      Automated detection of building elements from point clouds.
+      Automated detection and classification of building elements from point clouds.
     </div>
+
     <div class="service">
       <span>BIM Automation</span>
-      Python, Dynamo, and Revit API pipelines for scalable production.
+      Python, Dynamo, and Revit API pipelines for scalable and repeatable production.
     </div>
+
     <div class="service">
       <span>Digital Twins</span>
-      Operational-ready BIM models connected to analytics platforms.
+      Operational-ready BIM models connected to analytics and asset management platforms.
     </div>
   </div>
 </section>
-
 <section>
   <h2>Technical Demonstration</h2>
+
   <video autoplay muted loop playsinline>
-    <source src="assets/demo.mp4" type="video/mp4">
+    <source src="{{ '/assets/demo.mp4' | relative_url }}" type="video/mp4">
   </video>
+
   <p>
-    Demonstrating Scan-to-BIM automation, AI segmentation, and BIM scripting workflows.
+    Demonstration of Scan-to-BIM automation, AI-based segmentation,
+    and BIM scripting workflows.
   </p>
 </section>
-
 <section>
   <h2>Selected Engagements</h2>
+
   <ul>
-    <li><strong>Automated Indoor Scan-to-BIM</strong> — reduced modeling time by over 60%</li>
-    <li><strong>AI-Based Object Recognition</strong> — integrated segmentation into BIM workflows</li>
-    <li><strong>Enterprise BIM Automation</strong> — reusable pipelines for large-scale projects</li>
+    <li>
+      <strong>Automated Indoor Scan-to-BIM</strong>
+      — reduced modeling time by more than 60%
+    </li>
+
+    <li>
+      <strong>AI-Based Object Recognition</strong>
+      — integrated semantic segmentation into BIM pipelines
+    </li>
+
+    <li>
+      <strong>Enterprise BIM Automation</strong>
+      — reusable workflows for large-scale projects
+    </li>
   </ul>
 </section>
-
 <section>
   <h2>Portfolio & Credentials</h2>
-  <a href="assets/portfolio.pdf" target="_blank" class="button">
+
+  <a href="{{ '/assets/portfolio.pdf' | relative_url }}" target="_blank" class="button">
     Download Consultant Portfolio
   </a>
 </section>
-
 <section>
   <h2>Contact</h2>
+
   <p>Email: your@email.com</p>
+
   <p>
     LinkedIn:
     <a href="https://www.linkedin.com/in/muataz-albadri-2290381a4/" target="_blank">
