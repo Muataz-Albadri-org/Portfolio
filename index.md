@@ -4,25 +4,32 @@ title: ""
 show_posts: false
 ---
 
-<div class="container">
-  <div class="hero">
-    <!-- Hero Image -->
-    <div class="hero-image-wrapper">
-      <img src="assets/images/Muataz.jpg" alt="Muataz Albadri" class="hero-image">
-    </div>
+<!-- Header: Photo + Name + Title -->
+<div style="display:flex; align-items:center; margin-bottom:30px; flex-wrap:wrap;">
+  <!-- Avatar image with responsive and hover effect -->
+  <img src="/assets/images/Muataz.jpg"
+       alt="Muataz Albadri"
+       style="
+         width:120px;
+         height:120px;
+         border-radius:50%;
+         margin-right:20px;
+         object-fit:cover;
+         border: 2px solid #2C3E50;
+         transition: transform 0.3s, box-shadow 0.3s;
+       "
+       onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';"
+       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';"
+  >
 
-    <!-- Hero Text -->
-    <div class="hero-text">
-      <h1>Muataz Albadri</h1>
-      <h2>R&D Engineer & Scan-to-BIM Specialist</h2>
-      <p>
-        I help engineering firms, contractors, and asset owners convert
-        reality data into reliable digital twins and automated BIM workflows
-        that reduce delivery time, minimize errors, and improve decision-making.
-      </p>
-    </div>
+  <div style="flex:1; min-width:200px;">
+    <h1 style="margin:0; color:#222222;">Muataz Albadri</h1>
+    <h3 style="margin:5px 0 0; font-weight:normal; color:#2C3E50;">Scan-to-BIM & AI Automation Specialist</h3>
+    <p style="color:#555555; margin-top:5px;">Transforming reality data into actionable digital models</p>
   </div>
 </div>
+
+
 
 <section>
   <h2>Consulting Services</h2>
