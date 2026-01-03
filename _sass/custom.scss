@@ -119,14 +119,14 @@ a {
   .hero-image {
     width: 240px;
     height: 240px;
-    border-radius: 50%;
-    overflow: hidden;
+    border-radius: 50%;       // circle
+    overflow: hidden;          // crop image
     border: 3px solid $border;
     box-shadow: 0 0 40px rgba(76,120,168,0.28);
     display: block;
 
     img {
-      width: 100% !important;
+      width: 100% !important;   // fill the container
       height: 100% !important;
       object-fit: cover !important;
       display: block !important;
@@ -136,23 +136,19 @@ a {
   h1 {
     margin: 0;
     font-size: 3rem;
-    white-space: nowrap;
   }
 
   h2 {
     margin: 10px 0 20px;
-    font-size: 1.35rem;
     font-weight: 400;
     color: $accent;
   }
 
   p {
     max-width: 700px;
-    font-size: 1.05rem;
     color: $text-muted;
   }
 
-  /* Responsive */
   @media (max-width: 900px) {
     .hero-image {
       width: 200px;
@@ -165,7 +161,7 @@ a {
   }
 
   @media (max-width: 600px) {
-    grid-template-columns: 1fr; // stack image + text
+    grid-template-columns: 1fr;
     text-align: center;
 
     .hero-image {
@@ -175,7 +171,6 @@ a {
     }
 
     h1 {
-      white-space: normal;
       font-size: 2rem;
     }
 
@@ -184,7 +179,6 @@ a {
     }
   }
 }
-
 /* -------------------------------
    Sections
 -------------------------------- */
