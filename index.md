@@ -26,8 +26,8 @@ show_posts: false
         src="{{ '/assets/images/Muataz.jpg' | relative_url }}"
         alt="Muataz Albadri"
         style="
-          width:150px;
-          height:150px;
+          width:200px;
+          height:200px;
           border-radius:50%;
           object-fit:cover;
           border:3px solid #2C3E50;
