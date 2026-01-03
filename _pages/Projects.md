@@ -2,7 +2,7 @@
 title: "Projects"
 permalink: /Projects/
 layout: single
-published: false
+published: true
 ---
 - project 1
 - project 2
