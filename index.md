@@ -3,7 +3,13 @@ layout: home
 title: ""
 show_posts: false
 ---
-
+<div style="
+      display:flex;
+      align-items:flex-start;
+      margin-bottom:30px;
+      flex-wrap:wrap;
+      gap:20px;
+  ">
 <div class="hero-header">
   <!-- Avatar image -->
   <img src="{{ '/assets/images/Muataz.jpg' | relative_url }}" 
