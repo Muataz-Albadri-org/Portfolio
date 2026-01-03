@@ -201,3 +201,31 @@ footer {
   color: $text-muted;
 }
 
+/* ---------------------------------------------
+   Home page hero image override
+--------------------------------------------- */
+.home .page__content .hero-image-wrapper {
+  width: 240px !important;
+  height: 240px !important;
+  border-radius: 50% !important;
+  overflow: hidden !important;
+  border: 3px solid $border !important;
+  box-shadow: 0 0 40px rgba(76,120,168,0.28) !important;
+  margin: 0 auto !important;
+
+  .hero-image {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .home .page__content .hero-image-wrapper { width: 200px !important; height: 200px !important; }
+}
+
+@media (max-width: 600px) {
+  .home .page__content .hero-image-wrapper { width: 160px !important; height: 160px !important; }
+}
