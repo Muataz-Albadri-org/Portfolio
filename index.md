@@ -72,49 +72,72 @@ show_posts: false
 
       <!-- Logos -->
       <div class="logo-item">
-        <img src="/assets/logos/laser-scanner.svg" alt="Laser Scanners">
+        <img src="{{ '/assets/logos/laser-scanner.svg' | relative_url }}" alt="Laser Scanners">
+
       </div>
 
       <div class="logo-item">
-        <img src="/assets/logos/python.svg" alt="Python">
+        <img src="{{ '/assets/logos/python.svg' | relative_url }}" alt="Python">
       </div>
 
       <div class="logo-item">
         <img src="/assets/logos/ai.svg" alt="AI">
+        <img src="{{ '/assets/logos/ai.svg' | relative_url }}" alt="AI">
+
+        
       </div>
 
       <div class="logo-item">
         <img src="/assets/logos/recap.svg" alt="Autodesk ReCap">
+        <img src="{{ '/assets/logos/recap.svg' | relative_url }}" alt="Autodesk ReCap">
+
       </div>
 
       <div class="logo-item">
         <img src="/assets/logos/revit.svg" alt="Autodesk Revit">
+        <img src="{{ '/assets/logos/revit.svg' | relative_url }}" alt="Autodesk Revit">
+
       </div>
 
       <div class="logo-item">
         <img src="/assets/logos/autocad.svg" alt="AutoCAD">
+        <img src="{{ '/assets/logos/autocad.svg' | relative_url }}" alt="AutoCAD">
+
       </div>
 
       <div class="logo-item">
-        <img src="/assets/logos/blenderbim.svg" alt="BlenderBIM">
+        <img src="{{ '/assets/logos/blenderbim.svg' | relative_url }}" alt="BlenderBIM">
+
       </div>
 
       <div class="logo-item">
         <img src="/assets/logos/ifc.svg" alt="IFC">
+        <img src="{{ '/assets/logos/ifc.svg' | relative_url }}" alt="IFC">
+
       </div>
 
       <!-- Duplicate for seamless loop -->
       <div class="logo-item">
         <img src="/assets/logos/laser-scanner.svg" alt="">
+        <img src="{{ '/assets/logos/laser-scanner.svg' | relative_url }}" alt="">
+
+        
       </div>
       <div class="logo-item">
         <img src="/assets/logos/python.svg" alt="">
+        <img src="{{ '/assets/logos/python.svg' | relative_url }}" alt="">
+
       </div>
       <div class="logo-item">
         <img src="/assets/logos/ai.svg" alt="">
+        <img src="{{ '/assets/logos/ai.svg' | relative_url }}" alt="">
+
+        
       </div>
       <div class="logo-item">
         <img src="/assets/logos/recap.svg" alt="">
+        <img src="{{ '/assets/logos/recap.svg' | relative_url }}" alt="">
+
       </div>
 
     </div>
