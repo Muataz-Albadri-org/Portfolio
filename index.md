@@ -3,115 +3,153 @@ layout: home
 title: ""
 show_posts: false
 ---
+
 <style>
+/* ======================================================
+   DESIGN SYSTEM
+   ====================================================== */
 :root {
   --bg-main: #0B0D12;
   --bg-surface: #141821;
   --bg-soft: #1A1F2B;
+
   --text-main: #E6E8EB;
   --text-muted: #A0A4AB;
+
   --accent: #4C78A8;
   --accent-soft: #8FB3D9;
+
   --border: #2A2E38;
 }
 
+/* ======================================================
+   BASE
+   ====================================================== */
 body {
-  background: radial-gradient(circle at top right, #1E2A3A 0%, var(--bg-main) 55%);
-  color: var(--text-main);
+  margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.65;
-  margin: 0;
+  color: var(--text-main);
+  background: radial-gradient(
+    circle at top right,
+    #1E2A3A 0%,
+    var(--bg-main) 55%
+  );
 }
 
-  .container {
-  max-width: 1240px;  
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-soft);
+}
+
+/* ======================================================
+   CONTAINER
+   ====================================================== */
+.container {
+  max-width: 1240px;
   margin: 0 auto;
-  padding: 70px 32px;
+  padding: 72px 32px;
 }
 
-
-
-/* HERO */
-.hero {
-  display: grid;
-  grid-template-columns: 140px 1fr;
-  gap: 30px;
-  align-items: center;
-  margin-bottom: 80px;
-}
-
-.hero img,
-.author__avatar img {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  border: 3px solid $border-color;
-  box-shadow: 0 0 40px rgba(76,120,168,0.28);
-  object-fit: cover;
-}
-
-  @media (max-width: 768px) {
-  .hero img,
-  .author__avatar img {
-    width: 180px;
-    height: 180px;
+@media (max-width: 768px) {
+  .container {
+    padding: 56px 24px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero img,
-  .author__avatar img {
-    width: 150px;
-    height: 150px;
+  .container {
+    padding: 44px 20px;
   }
 }
-.hero p {
-  text-align: justify;
-  text-justify: inter-word;
+
+/* ======================================================
+   HERO
+   ====================================================== */
+.hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 88px;
 }
+
+.hero img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid var(--border);
+  box-shadow: 0 0 40px rgba(76,120,168,0.28);
+  object-fit: cover;
+}
+
 .hero h1 {
-  font-size: 3rem;
   margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
 }
 
 .hero h2 {
+  margin: 10px 0 20px;
   font-size: 1.35rem;
   font-weight: 400;
   color: var(--accent);
-  margin: 8px 0 18px;
 }
 
 .hero p {
-  max-width: 680px;
-  color: var(--text-muted);
+  max-width: 700px;
   font-size: 1.05rem;
+  color: var(--text-muted);
 }
 
-/* BUTTONS */
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  background: linear-gradient(135deg, var(--accent), #5A8BC0);
-  color: #fff;
-  padding: 14px 32px;
-  border-radius: 6px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* Tablet */
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 30px rgba(76,120,168,0.35);
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero img {
+    margin: 0 auto 20px;
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero h1 {
+    white-space: normal;
+    font-size: 2rem;
+  }
+
+  .hero p {
+    text-align: left;
+  }
 }
 
-/* SECTIONS */
+/* ======================================================
+   SECTIONS
+   ====================================================== */
 section {
   background: linear-gradient(180deg, var(--bg-surface), var(--bg-soft));
   border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 40px;
-  margin-bottom: 40px;
+  border-radius: 12px;
+  padding: 42px;
+  margin-bottom: 48px;
 }
 
 section h2 {
@@ -119,86 +157,92 @@ section h2 {
   font-size: 1.8rem;
 }
 
-/* SERVICES */
+@media (max-width: 600px) {
+  section {
+    padding: 28px 22px;
+  }
+
+  section h2 {
+    font-size: 1.55rem;
+  }
+}
+
+/* ======================================================
+   SERVICES
+   ====================================================== */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  gap: 24px;
 }
 
 .service {
   background: rgba(255,255,255,0.02);
   border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 20px;
+  border-radius: 10px;
+  padding: 24px;
 }
 
 .service span {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
   color: var(--accent);
-  font-weight: 600;
 }
 
-/* PROJECTS */
+/* ======================================================
+   BUTTON
+   ====================================================== */
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 34px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, var(--accent), #5A8BC0);
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(76,120,168,0.35);
+}
+
+/* ======================================================
+   PROJECTS
+   ====================================================== */
 .project-title {
-  color: var(--accent-soft);
   font-weight: 600;
+  color: var(--accent-soft);
 }
 
-/* VIDEO */
+/* ======================================================
+   VIDEO
+   ====================================================== */
 video {
   width: 100%;
-  border-radius: 8px;
+  max-height: 480px;
+  border-radius: 10px;
   border: 1px solid var(--border);
+  object-fit: cover;
 }
 
-/* FOOTER */
-footer {
-  margin-top: 80px;
-  text-align: center;
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.hero h1 {
-  white-space: nowrap;
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    white-space: normal;
+@media (max-width: 600px) {
+  video {
+    max-height: 300px;
   }
 }
 
-  /* ===== NAVIGATION LINKS – FORCE CONSISTENT COLOR ===== */
-
-/* Catch all possible theme selectors */
-header a,
-header a:visited,
-.site-header a,
-.site-header a:visited,
-.site-title,
-.site-nav a,
-.page-link {
-  color: #E6E8EB !important;
+/* ======================================================
+   FOOTER
+   ====================================================== */
+footer {
+  text-align: center;
+  padding: 56px 20px;
+  font-size: 0.9rem;
+  color: var(--text-muted);
 }
-
-/* Hover */
-header a:hover,
-.site-header a:hover,
-.site-nav a:hover,
-.page-link:hover {
-  color: #4C78A8 !important;
-}
-
-/* Active page */
-.page-link.active,
-header a[aria-current="page"] {
-  color: #4C78A8 !important;
-  border-bottom: 2px solid #4C78A8;
-  padding-bottom: 4px;
-}
-
-
 </style>
 
 <div class="container">
@@ -208,15 +252,14 @@ header a[aria-current="page"] {
     <img src="assets/images/Muataz.jpg" alt="Muataz Albadri">
     <div>
       <h1>Muataz Albadri</h1>
-      <h2> R&D Engineer & Scan-to-BIM Specialist </h2>
+      <h2>R&D Engineer & Scan-to-BIM Specialist</h2>
       <p>
-        I help engineering firms, contractors, and asset owners convert
-        reality data into reliable digital twins and automated BIM workflows
-        that reduce delivery time, minimize errors, and improve decision-making.
+        I help engineering firms, contractors, and asset owners convert reality
+        data into reliable digital twins and automated BIM workflows that reduce
+        delivery time, minimize errors, and improve decision-making.
       </p>
     </div>
   </div>
-  
 
   <!-- SERVICES -->
   <section>
@@ -224,19 +267,19 @@ header a[aria-current="page"] {
     <div class="services">
       <div class="service">
         <span>Scan-to-BIM</span>
-        <p>Point clouds to Revit / IFC models with structured semantics and QA-ready outputs.</p>
+        Point clouds to Revit / IFC models with structured semantics and QA-ready outputs.
       </div>
       <div class="service">
         <span>AI for Reality Data</span>
-        <p>Automated detection of walls, openings, MEP elements, and assets from point clouds.</p>
+        Automated detection of building elements from point clouds.
       </div>
       <div class="service">
         <span>BIM Automation</span>
-        <p>Python, Dynamo, and Revit API pipelines for scalable and repeatable BIM production.</p>
+        Python, Dynamo, and Revit API pipelines for scalable production.
       </div>
       <div class="service">
         <span>Digital Twins</span>
-        <p>Operational-ready BIM models connected to analytics and visualization platforms.</p>
+        Operational-ready BIM models connected to analytics platforms.
       </div>
     </div>
   </section>
@@ -247,7 +290,7 @@ header a[aria-current="page"] {
     <video autoplay muted loop playsinline>
       <source src="assets/demo.mp4" type="video/mp4">
     </video>
-    <p style="color:var(--text-muted); margin-top:15px;">
+    <p style="margin-top:14px; color:var(--text-muted);">
       Demonstrating Scan-to-BIM automation, AI segmentation, and BIM scripting workflows.
     </p>
   </section>
@@ -258,15 +301,15 @@ header a[aria-current="page"] {
     <ul>
       <li>
         <span class="project-title">Automated Indoor Scan-to-BIM</span><br>
-        Reduced manual modeling time by over 60% across multi-storey buildings.
+        Reduced modeling time by over 60%.
       </li>
       <li>
         <span class="project-title">AI-Based Object Recognition</span><br>
-        Integrated point cloud segmentation directly into BIM authoring workflows.
+        Integrated segmentation into BIM authoring workflows.
       </li>
       <li>
         <span class="project-title">Enterprise BIM Automation</span><br>
-        Developed reusable pipelines for large-scale project delivery.
+        Delivered reusable pipelines for large-scale projects.
       </li>
     </ul>
   </section>
@@ -280,7 +323,7 @@ header a[aria-current="page"] {
   </section>
 
   <!-- CONTACT -->
-  <section id="contact">
+  <section>
     <h2>Contact</h2>
     <p>Email: your@email.com</p>
     <p>
@@ -296,4 +339,3 @@ header a[aria-current="page"] {
 <footer>
   © {{ site.time | date: "%Y" }} Muataz Albadri · Scan-to-BIM & AI Consulting
 </footer>
-
