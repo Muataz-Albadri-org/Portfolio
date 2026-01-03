@@ -251,17 +251,21 @@ footer {
     text-align: center;
   }
 
-  .page__content .hero img {
-  width: 240px;
+.hero img,
+.page__content .hero img {
+  width: 240px;       // Make sure width and height are equal
   height: 240px;
-  border-radius: 50%;
+  border-radius: 50%; // Perfect circle
   border: 3px solid $border;
   box-shadow: 0 0 40px rgba(76,120,168,0.28);
   object-fit: cover;
   display: block;
+  margin: 0 auto;
 }
 
+// Responsive overrides
 @media (max-width: 900px) {
+  .hero img,
   .page__content .hero img {
     width: 200px;
     height: 200px;
@@ -269,12 +273,14 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .hero img,
   .page__content .hero img {
     width: 160px;
     height: 160px;
     margin-bottom: 16px;
   }
 }
+
 
 
   .hero h1 {
