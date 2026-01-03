@@ -1,1 +1,277 @@
+/* ======================================================
+   Custom theme overrides – Muataz Albadri Consulting
+   ====================================================== */
+
+/* -------------------------------
+   Design tokens
+-------------------------------- */
+$bg-main: #0B0D12;
+$bg-surface: #141821;
+$bg-soft: #1A1F2B;
+
+$text-main: #E6E8EB;
+$text-muted: #A0A4AB;
+
+$accent: #4C78A8;
+$accent-soft: #8FB3D9;
+
+$border: #2A2E38;
+
+$nav-bg: #0B0D12;
+$nav-text: #E6E8EB;
+$nav-muted: #B5BAC3;
+
+/* -------------------------------
+   Base
+-------------------------------- */
+body {
+  background: radial-gradient(circle at top right, #1E2A3A 0%, $bg-main 55%);
+  color: $text-main;
+  line-height: 1.65;
+}
+
+a {
+  color: $accent;
+
+  &:hover {
+    color: $accent-soft;
+  }
+}
+
+/* -------------------------------
+   Container
+-------------------------------- */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 72px 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 56px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 44px 20px;
+  }
+}
+
+/* -------------------------------
+   Header / Navigation
+-------------------------------- */
+.masthead {
+  background-color: $nav-bg;
+  border-bottom: 1px solid $border;
+}
+
+.masthead__inner-wrap {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0.9rem 1.25rem;
+}
+
+.site-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.greedy-nav {
+  background: transparent;
+}
+
+.greedy-nav a {
+  color: $nav-muted;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-left: 1.6rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+
+  &:hover {
+    color: #ffffff;
+    border-bottom-color: rgba(76,120,168,0.5);
+  }
+}
+
+.greedy-nav .active a {
+  color: #ffffff;
+  border-bottom-color: $accent;
+}
+
+/* -------------------------------
+   Hero
+-------------------------------- */
+.hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 88px;
+}
+
+.hero img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 3px solid $border;
+  box-shadow: 0 0 40px rgba(76,120,168,0.28);
+  object-fit: cover;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.hero h2 {
+  margin: 10px 0 20px;
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: $accent;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 1.05rem;
+  color: $text-muted;
+}
+
+/* -------------------------------
+   Sections
+-------------------------------- */
+section {
+  background: linear-gradient(180deg, $bg-surface, $bg-soft);
+  border: 1px solid $border;
+  border-radius: 12px;
+  padding: 42px;
+  margin-bottom: 48px;
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+  }
+}
+
+/* -------------------------------
+   Services
+-------------------------------- */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.service {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid $border;
+  border-radius: 10px;
+  padding: 24px;
+
+  span {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: $accent;
+  }
+}
+
+/* -------------------------------
+   Button
+-------------------------------- */
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 14px 34px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(135deg, $accent, #5A8BC0);
+  border-radius: 6px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(76,120,168,0.35);
+  }
+}
+
+/* -------------------------------
+   Video
+-------------------------------- */
+video {
+  width: 100%;
+  max-height: 480px;
+  border-radius: 10px;
+  border: 1px solid $border;
+  object-fit: cover;
+}
+
+/* -------------------------------
+   Footer
+-------------------------------- */
+footer {
+  text-align: center;
+  padding: 56px 20px;
+  font-size: 0.9rem;
+  color: $text-muted;
+}
+
+/* ======================================================
+   Responsive overrides (BOTTOM ON PURPOSE)
+   ====================================================== */
+
+@media (max-width: 900px) {
+  .hero img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero img {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 16px;
+  }
+
+  .hero h1 {
+    white-space: normal;
+    font-size: 2rem;
+  }
+
+  .hero p {
+    text-align: left;
+  }
+
+  section {
+    padding: 28px 22px;
+  }
+
+  video {
+    max-height: 300px;
+  }
+}
 
