@@ -12,7 +12,7 @@ show_posts: false
     <h1>Muataz Albadri</h1>
     <h2>R&D Engineer & Scan-to-BIM Specialist</h2>
     <p>
-      I help engineering companies, contractors, and asset owners convert
+      I help engineering firms, contractors, and asset owners convert
       reality data into reliable digital twins and automated BIM workflows
       that reduce delivery time, minimize errors, and improve decision-making.
     </p>
