@@ -227,4 +227,46 @@ footer {
   font-size: 0.9rem;
   color: $text-muted;
 }
+.logo-scroll-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+  background: #f7f8fa;
+  border-radius: 8px;
+}
+
+.logo-scroll-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: max-content;
+  animation: scroll-right 30s linear infinite;
+}
+
+.logo-item {
+  flex: 0 0 auto;
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.logo-item:hover {
+  opacity: 1;
+}
+
+.logo-item img {
+  height: 48px;
+  width: auto;
+  display: block;
+  filter: grayscale(100%);
+}
+
+@keyframes scroll-right {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 
