@@ -201,31 +201,72 @@ footer {
   color: $text-muted;
 }
 
-/* ---------------------------------------------
-   Home page hero image override
---------------------------------------------- */
-.home .page__content .hero-image-wrapper {
-  width: 240px !important;
-  height: 240px !important;
-  border-radius: 50% !important;
-  overflow: hidden !important;
-  border: 3px solid $border !important;
-  box-shadow: 0 0 40px rgba(76,120,168,0.28) !important;
-  margin: 0 auto !important;
+/* ======================================================
+   Home hero image wrapper – fixed size, circular, responsive
+====================================================== */
+.home .hero {
+  display: grid;
+  grid-template-columns: auto 1fr; /* image left, text right on large screens */
+  gap: 36px;
+  align-items: center;
 
-  .hero-image {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block !important;
+  /* Hero image wrapper */
+  .hero-image-wrapper {
+    width: 240px;               /* fixed size */
+    height: 240px;
+    border-radius: 50%;         /* circle */
+    overflow: hidden;           /* crop any excess */
+    border: 3px solid $border;
+    box-shadow: 0 0 40px rgba(76,120,168,0.28);
+    margin: 0 auto;             /* center horizontally if stacked */
+
+    display: flex;              /* center the image inside the wrapper */
+    justify-content: center;
+    align-items: center;
+
+    .hero-image {
+      width: auto;              /* use natural image width */
+      height: auto;             /* use natural image height */
+      max-width: 100%;          /* never exceed wrapper width */
+      max-height: 100%;         /* never exceed wrapper height */
+      object-fit: none;         /* do not stretch */
+      display: block;
+    }
   }
-}
 
-/* Responsive adjustments */
-@media (max-width: 900px) {
-  .home .page__content .hero-image-wrapper { width: 200px !important; height: 200px !important; }
-}
+  /* Hero text */
+  .hero-text {
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+      white-space: nowrap;
+    }
 
-@media (max-width: 600px) {
-  .home .page__content .hero-image-wrapper { width: 160px !important; height: 160px !important; }
+    h2 {
+      margin: 10px 0 20px;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: $accent;
+    }
+
+    p {
+      max-width: 700px;
+      font-size: 1.05rem;
+      color: $text-muted;
+    }
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 900px) {
+    .hero-image-wrapper { width: 180px; height: 180px; }
+    .hero-text h1 { font-size: 2.4rem; }
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr; /* stack image above text */
+    text-align: center;
+    .hero-image-wrapper { width: 160px; height: 160px; margin: 0 auto 16px; }
+    .hero-text h1 { font-size: 2rem; white-space: normal; }
+    .hero-text p { text-align: center; }
+  }
 }
