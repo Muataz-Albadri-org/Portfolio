@@ -6,6 +6,12 @@ show_posts: false
 
 <div class="container">
   <div class="hero">
+    <!-- Hero Image -->
+    <div class="hero-image-wrapper">
+      <img src="assets/images/Muataz.jpg" alt="Muataz Albadri" class="hero-image">
+    </div>
+
+    <!-- Hero Text -->
     <div class="hero-text">
       <h1>Muataz Albadri</h1>
       <h2>R&D Engineer & Scan-to-BIM Specialist</h2>
