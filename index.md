@@ -5,7 +5,6 @@ show_posts: false
 ---
 
 <div class="container">
-
   <div class="hero">
     <div class="hero-image-wrapper">
        <img src="assets/images/Muataz.jpg" alt="Muataz Albadri" class="hero-image">
@@ -20,7 +19,6 @@ show_posts: false
       </p>
     </div>
   </div>
-
 </div>
 
 <section>
