@@ -9,6 +9,7 @@ show_posts: false
   <section class="hero-vertical">
 
     <!-- Avatar -->
+    <div style=" display:flex; align-items:flex-start; margin-bottom:30px; flex-wrap:wrap; gap:20px; ">
     <img
       src="{{ '/assets/images/Muataz.jpg' | relative_url }}"
       alt="Muataz Albadri"
