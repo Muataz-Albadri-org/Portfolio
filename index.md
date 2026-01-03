@@ -18,15 +18,16 @@ show_posts: false
 >
 
   <!-- Text -->
-  <div class="hero-text">
-    <div class="hero-name">
-      <h1>Muataz Albadri</h1>
-      <h3>R&D Engineer & Scan-to-BIM Specialist</h3>
-    </div>
-    <p>
-      I help engineering firms, contractors, and asset owners convert reality data into reliable digital twins and automated BIM workflows that reduce delivery time, minimize errors, and improve decision-making.
-    </p>
+   <div class="hero-text">
+  <div class="hero-name">
+    <h1 style="margin:0;">Muataz Albadri</h1>
+    <h3 style="margin:2px 0 10px; font-weight:400;">R&D Engineer & Scan-to-BIM Specialist</h3>
   </div>
+  <p style="margin-top:0;">
+    I help engineering firms, contractors, and asset owners convert reality data into reliable digital twins and automated BIM workflows that reduce delivery time, minimize errors, and improve decision-making.
+  </p>
+ </div>
+
 </div>
 
 
